@@ -1,0 +1,18 @@
+body {
+  background: #4b6cb7;
+  background: -webkit-linear-gradient(
+    to right,
+    #182848,
+    #4b6cb7
+  );
+  background: linear-gradient(
+    to right,
+    #182848,
+    #4b6cb7
+  );
+}
+
+.App {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
