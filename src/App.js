@@ -1,9 +1,12 @@
 import './App.css';
+import NavBar from './components/NavBar';
+import Profile from './components/Profile';
 
 function App() {
   return (
     <div className="App">
-      <h1>Takku Site</h1>
+      <Profile />
+      <NavBar />
     </div>
   );
 }
