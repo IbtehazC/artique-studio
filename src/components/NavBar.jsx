@@ -49,7 +49,9 @@ export default function NavBar() {
       </ul>
       <ul className="nav-buttons">
         <li>
-          <button className="follow-button">Message</button>
+          <Link to="/email">
+            <button className="follow-button">Message</button>
+          </Link>
         </li>
       </ul>
     </nav>
