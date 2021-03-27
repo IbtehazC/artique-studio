@@ -1,33 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  const [showLogo, setShowLogo] = useState(false);
+
+  const changeLogo = () => {
+    if (window.scrollY >= 460) setShowLogo(true);
+    else setShowLogo(false);
+  };
+
+  window.addEventListener("scroll", changeLogo);
+
   return (
     <nav className="navbar">
-      <div className="logo">
-        <img
-          src="/logo192.png"
-          alt="logo"
-          style={{ height: "32px", width: "32px" }}
-        />
-      </div>
+      <Link to="/" className={showLogo ? "logo-show" : "logo"}>
+        <div className="logo-container">
+          <img
+            src="/images/display picture.jpg"
+            alt="logo"
+            style={{ height: "32px", width: "32px" }}
+          />
+          <p>Swapnil Tanzim</p>
+        </div>
+      </Link>
+
       <ul className="nav-items">
         <li>
-          <a href="/">Portfolio</a>
+          <div>
+            <Link to="/portfolio">Portfolio</Link>
+          </div>
         </li>
         <li>
-          <a href="/">About</a>
+          <div>
+            <Link to="/about">About</Link>
+          </div>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <div>
+            <Link to="/contact">Contact</Link>
+          </div>
+        </li>
+        <li>
+          <div>
+            <Link to="/upload">Upload</Link>
+          </div>
         </li>
       </ul>
       <ul className="nav-buttons">
         <li>
-          <button className="follow-button">Facebook</button>
-        </li>
-        <li>
-          <button className="message-button">Message</button>
+          <button className="follow-button">Message</button>
         </li>
       </ul>
     </nav>

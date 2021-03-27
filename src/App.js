@@ -1,13 +1,17 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Profile from './components/Profile';
+import Navbar from '../src/components/NavBar';
+import Profile from '../src/components/Profile';
+import Section from '../src/components/Section';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Profile />
-      <NavBar />
-    </div>
+      <Navbar />
+      <Section />
+    </Router>
   );
 }
 
