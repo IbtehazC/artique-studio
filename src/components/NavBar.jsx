@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const [showLogo, setShowLogo] = useState(false);
-  const [isActive, setIsActive] = useState(false);
 
   const changeLogo = () => {
     if (window.scrollY >= 460) setShowLogo(true);
@@ -74,11 +73,6 @@ export default function NavBar() {
         </li>
       </ul>
       <ul className="nav-buttons">
-        <li>
-          <Link to="/email">
-            <button className="follow-button">Message</button>
-          </Link>
-        </li>
       </ul>
     </nav>
   );

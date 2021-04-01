@@ -12,9 +12,8 @@ button {
   position: -webkit-sticky;
   top: 0;
   position: sticky;
-  background-color: #222;
-  border-color: #111;
-  border: 1px solid #111;
+  background-color: #28527a;
+  border: 1px solid #2f2626;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,19 +21,19 @@ button {
 }
 
 .logo-container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .logo-container img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .logo-container p {
-    padding-left: 10px;
-    letter-spacing: 1px;
-    font-size: 15px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 .nav-items {
@@ -47,17 +46,17 @@ button {
 }
 
 .nav-link {
-  padding: 1.4rem 2rem;
+  padding: 1.3rem 2rem;
   transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
 .nav-link-active {
-  background-color: #151515;
-  color: #0c8ec4;
+  background-color: #8ac4d0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-items a:hover {
-  color: #0c8ec4;
+  color: #fbeeac;
 }
 
 .nav-buttons {

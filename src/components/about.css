@@ -1,0 +1,69 @@
+.about-wrapper {
+  background-color: rgba(21, 22, 30, 0.9);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  grid-template-areas: ". content content content content .";
+}
+
+.content {
+  grid-area: content;
+  max-width: 800px;
+  width: 100%;
+  color: white;
+  justify-self: center;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.08rem;
+  margin-bottom: 4rem;
+}
+
+.content p {
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: 0.07rem;
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 35%;
+  padding-bottom: 3rem;
+}
+
+.icons-div svg {
+  fill: whitesmoke;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.icons-div svg:hover {
+  fill: #0c8ec4;
+}
+
+.skill-div {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+}
+
+.chip {
+  color: #000;
+  display: inline-block;
+  padding: 0 25px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  align-items: center;
+}

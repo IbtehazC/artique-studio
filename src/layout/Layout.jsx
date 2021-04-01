@@ -7,7 +7,7 @@ export default function Layout({children}) {
         <div>
             <Profile />
             <NavBar />
-            <div className="main" >
+            <div>
                 {children}
             </div>
         </div>

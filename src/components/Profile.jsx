@@ -5,11 +5,6 @@ export default function Profile() {
   return (
     <div
       className="artist-cover"
-      style={{
-        backgroundImage: `url(/images/bkgrnd.jpg`,
-        height: "400px",
-        width: "100%",
-      }}
     >
       <div className="artist-info">
         <div className="avatar">

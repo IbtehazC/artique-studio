@@ -18,13 +18,14 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/src/images/background.jpg');
+  background-size: cover;
 }
 
 .App {
   max-width: 960px;
   margin: 0 auto;
 }
-
 
 form{
   margin: 30px auto 10px;
