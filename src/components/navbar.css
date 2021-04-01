@@ -8,11 +8,13 @@ button {
 }
 
 .navbar {
+  height: 4rem;
   position: -webkit-sticky;
   top: 0;
   position: sticky;
   background-color: #222;
   border-color: #111;
+  border: 1px solid #111;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,15 +44,14 @@ button {
 
 .nav-items li {
   list-style: none;
-  padding-left: 20px;
 }
 
-.nav-items a {
-  padding: 18px 20px;
+.nav-link {
+  padding: 1.4rem 2rem;
   transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
-.nav-items a:focus {
+.nav-link-active {
   background-color: #151515;
   color: #0c8ec4;
 }
