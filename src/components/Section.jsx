@@ -5,7 +5,8 @@ import { Route } from "react-router-dom";
 import Contact from "./Contact";
 import ImageUploader from "./ImageUploader";
 import Portfolio from "./Portfolio";
-import Email from "../components/Email";
+//import Email from "../components/Email";
+import ContactUs from "../components/ContactUs";
 
 export class Section extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export class Section extends React.Component {
         <Route path="/contact" component={Contact} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route path="/upload" component={ImageUploader} />
-        <Route path="/email" component={Email} />
+        <Route path="/email" component={ContactUs} />
       </section>
     );
   }
