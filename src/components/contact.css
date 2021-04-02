@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: rgba(21, 22, 30, 0.9);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  grid-template-areas: ". content content content content .";
+}
+
+.content {
+  grid-area: content;
+  max-width: 800px;
+  width: 100%;
+  color: white;
+  justify-self: center;
+}
