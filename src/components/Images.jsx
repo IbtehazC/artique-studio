@@ -1,12 +1,8 @@
 import React from "react";
-import useFirestore from "../hooks/useFirestore";
 import { motion } from "framer-motion";
-import './images.css';
+import "./images.css";
 
-export default function Images({ setSelectedImg }) {
-  const { docs } = useFirestore("images");
-  console.log(docs);
-
+export default function Images({ setSelectedImg, docs }) {
   return (
     <div className="container">
       {docs &&
@@ -20,6 +16,7 @@ export default function Images({ setSelectedImg }) {
             <div className="imagebox">
               <img
                 src={doc.url}
+                loading="eager"
                 alt="some"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

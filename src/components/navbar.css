@@ -9,18 +9,17 @@ button {
 
 .navbar {
   height: 4rem;
-  position: -webkit-sticky;
-  top: 0;
+  top: -1px;
   position: sticky;
   background-color: #28527a;
   border: 1px solid #2f2626;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   z-index: 3;
 }
 
 .logo-container {
+  flex: 0;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -37,6 +36,8 @@ button {
 }
 
 .nav-items {
+  flex: 1;
+  justify-content: center;
   display: flex;
   padding: 0 15px;
 }
@@ -60,47 +61,8 @@ button {
 }
 
 .nav-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.nav-buttons li {
-  list-style: none;
-  list-style: none;
-  padding: 0 10px;
-}
-
-.follow-button {
-  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  color: #fff;
-  background-color: #13aff0;
-  border-color: #0e9fdc;
-  background-image: none;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-.message-button {
-  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  background-image: none;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border: 1px solid transparent;
+  width: 161.8px;
 }
 
 .logo {
@@ -112,4 +74,36 @@ button {
   cursor: pointer;
   opacity: 1;
   transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar {
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    justify-content: center;
+  }
+
+  .nav-items {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navbar .logo-container{
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .nav-link-active {
+    background-color: transparent;
+    border: none;
+    color: #fbeeac;
+  }
 }

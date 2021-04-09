@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap");
 
-:root{
+:root {
   --primary: rgba(20, 45, 71, 1);
   --secondary: #182848;
   --error: #ff4a4a;
 }
 
 html {
-  height: 100%;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background: var(--primary);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/src/images/background.jpg');
-  background-size: cover;
+  background-image: url("/src/images/background-large.jpg");
+  background-size: 100% 100%;
+  object-fit: cover;
 }
 
 .App {
@@ -27,16 +27,16 @@ body {
   margin: 0 auto;
 }
 
-form{
+form {
   margin: 30px auto 10px;
   text-align: center;
 }
-label input{
+label input {
   height: 0;
   width: 0;
   opacity: 0;
 }
-label{
+label {
   display: block;
   width: 30px;
   height: 30px;
@@ -48,19 +48,19 @@ label{
   font-weight: bold;
   font-size: 24px;
 }
-label:hover{
+label:hover {
   background: green;
   color: white;
 }
-.output{
+.output {
   height: 60px;
   font-size: 0.8rem;
 }
-.error{
+.error {
   color: red;
 }
 
-.progress-bar{
+.progress-bar {
   height: 5px;
   max-width: 500px;
   background: green;
@@ -68,49 +68,13 @@ label:hover{
   margin-left: 32%;
 }
 
-.image-grid{
-  margin: 20px 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 500px;
-  grid-gap: 20px;
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url("/src/images/background-small.jpg");
+  }
 }
-.image-wrap{
-  /* overflow: hidden; */
-  height: 0;
-  padding: 50% 0;
-  /* padding controls height, will always be perfectly square regardless of width */
-  position: relative;
-  opacity: 0.8;
-}
-.image-wrap img{
-  margin-left: 100px;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.backdrop{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-.backdrop img{
-  display: block;
-  max-width: 60%;
-  max-height: 80%;
-  margin: 60px auto;
-  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
-  border: 3px solid white;
-}
-
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

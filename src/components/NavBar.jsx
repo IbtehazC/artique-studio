@@ -60,20 +60,8 @@ export default function NavBar() {
             </NavLink>
           </div>
         </li>
-        <li>
-          <div>
-            <NavLink
-              className="nav-link"
-              activeClassName="nav-link-active"
-              to="/upload"
-            >
-              Upload
-            </NavLink>
-          </div>
-        </li>
       </ul>
-      <ul className="nav-buttons">
-      </ul>
+      <div className="nav-buttons"></div>
     </nav>
   );
 }
