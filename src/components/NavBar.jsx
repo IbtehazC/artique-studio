@@ -16,12 +16,7 @@ export default function NavBar() {
     <nav className="navbar">
       <Link to="/" className={showLogo ? "logo-show" : "logo"}>
         <div className="logo-container">
-          <img
-            src="/images/display picture.jpg"
-            alt="logo"
-            style={{ height: "32px", width: "32px" }}
-          />
-          <p>Swapnil Tanzim</p>
+          <p>Artique Studio</p>
         </div>
       </Link>
 
