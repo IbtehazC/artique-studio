@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary: rgba(20, 45, 71, 1);
   --secondary: #182848;
   --error: #ff4a4a;
-}
-
-html {
 }
 
 body {
@@ -17,8 +20,7 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/src/images/background-large.jpg");
-  background-size: 100% 100%;
+  background-image: url("/src/images/background-large.png");
   object-fit: cover;
 }
 
@@ -68,9 +70,15 @@ label:hover {
   margin-left: 32%;
 }
 
+.footer {
+  background-color: black;
+  color: white;
+}
+
 @media only screen and (max-width: 400px) {
   body {
     background-image: url("/src/images/background-small.jpg");
+    background-size: contain;
   }
 }
 

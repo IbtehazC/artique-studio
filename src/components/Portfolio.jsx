@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import Images from "./Images";
 import ImagePopUp from "./ImagePopUp";
-import Loading from "./Loading";
 import useFirestore from "../hooks/useFirestore";
 
 export default function Portfolio() {
   const [selectedImg, setSelectedImg] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const { docs } = useFirestore("images", setLoading);
+  const { docs } = useFirestore("images");
 
   return (
     <div className="main">
-      
-      {loading ? (
-        <Loading />
-      ) : (
-        <Images setSelectedImg={setSelectedImg} docs={docs} setLoading={setLoading} />
-      )}
+      <Images setSelectedImg={setSelectedImg} docs={docs} />
       {selectedImg && (
         <ImagePopUp selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
       )}

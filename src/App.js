@@ -4,8 +4,6 @@ import Layout from './layout/Layout';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
-import ImageUploader from './components/ImageUploader';
-
 
 function App() {
   return (
@@ -25,11 +23,6 @@ function App() {
           <Contact />
         </Layout>
       )} />
-      <Route exact path='/upload' render={() => (
-          <Layout>
-            <ImageUploader />
-          </Layout>
-        )} />
     </Switch>
   );
 }

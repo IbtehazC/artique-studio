@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import { firestore } from '../firebase/config'
 
-const useFirestore = (collection, setLoading) => {
+const useFirestore = (collection) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
-        setLoading(true);
         return firestore.collection(collection)
             .orderBy('createdAt', 'desc')
             .onSnapshot((snap) => {
@@ -14,9 +13,8 @@ const useFirestore = (collection, setLoading) => {
                     documents.push({ ...doc.data(), id: doc.id })
                 });
                 setDocs(documents);
-                setLoading(false);
             });
-    }, [collection, setLoading]);
+    }, [collection]);
 
     return { docs };
 }

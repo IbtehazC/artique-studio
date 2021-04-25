@@ -1,36 +1,16 @@
 .artist-cover {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-    color: white;
-    background-color: rgba(21, 22, 30, 0.7);
-}
-
-.artis-name {
-    font-size: 32px;
-    font-weight: normal;
-}
-
-.additional-info {
-    padding-bottom: 10px;
-}
-
-.artist-cover img {
-    width: 128px;
-    height: 128px;
-}
-
-.avatar img {
-    border-radius: 50%;
+  padding: 24px auto;
+  text-align: center;
+  background-color: rgba(21, 22, 30, 0.7);
 }
 
 @media only screen and (max-width: 960px) {
-
-    .artist-cover {
-        padding-top: 16px;
-        height: 50%;
-    }
-
+  .artist-cover {
+    padding-top: 16px;
+    height: 50%;
+  }
+  .title-svg {
+    height: 80%;
+    width: 80%;
+  }
 }
