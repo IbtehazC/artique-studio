@@ -1,6 +1,6 @@
-import emailjs from "emailjs";
+import emailjs from "emailjs-com";
 import React from "react";
-import "../components/contactUs.css";
+import "./contactUs.css";
 
 export default function ContactUs() {
   function sendEmail(e) {
@@ -8,10 +8,10 @@ export default function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_ifuaead",
-        "template_gh9kjda",
+        "service_qyefa8o",
+        "template_g5e7sll",
         e.target,
-        "user_IyOgyRSmXjHcxNHgAQvb0"
+        "user_qeL5NINjCiGJS3NEBjMPF"
       )
       .then(
         (result) => {
