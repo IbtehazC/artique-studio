@@ -27,6 +27,8 @@ button {
 
 .logo-container img {
   border-radius: 50%;
+  height: 32px;
+  width: 32px;
 }
 
 .logo-container p {

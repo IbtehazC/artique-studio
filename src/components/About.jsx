@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import logo from '../images/Logo.svg'
 import "./about.css";
 
 export default function About() {
@@ -11,7 +10,6 @@ export default function About() {
           initial={{ x: "-100vw" }}
           animate={{ x: 0, transition: { duration: 1, type: "spring" } }}
         >
-          <img src={logo} alt="logo"/>
           <h2 style={{ marginTop: "3rem" }}>ARTIQUE STUDIO</h2>
           <p>
             Artique Studio is a design studio specializing in murals or

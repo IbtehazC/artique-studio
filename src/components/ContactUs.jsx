@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com";
+import emailjs from "emailjs";
 import React from "react";
 import "./contactUs.css";
 
