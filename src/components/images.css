@@ -137,7 +137,6 @@
   }
   .backdrop {
     flex-direction: column;
-    justify-content: end;
   }
   .backdrop img {
     display: block;

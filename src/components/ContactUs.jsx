@@ -44,15 +44,14 @@ export default function ContactUs() {
                 placeholder="Phone number"
                 name="phone_number"
               />
-            </div>
+              <div className="txt-area">
+                <textarea
+                  className="input"
+                  placeholder="Message"
+                  name="message"
+                ></textarea>
+              </div>
 
-            <div className="txt-area">
-              <textarea
-                className="input"
-                id=""
-                placeholder="Message"
-                name="message"
-              ></textarea>
               <div className="btn-submit">
                 <input
                   type="submit"
