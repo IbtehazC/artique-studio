@@ -13,6 +13,7 @@
   width: 100%;
   color: white;
   justify-self: center;
+  letter-spacing: 0.1rem;
 }
 
 .content h2 {
@@ -20,7 +21,6 @@
   font-size: 2rem;
   font-weight: normal;
   letter-spacing: 0.08rem;
-  margin-bottom: 4rem;
 }
 
 .content p {
@@ -29,6 +29,8 @@
   letter-spacing: 0.07rem;
   font-size: 1.1rem;
   margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
 }
 
 .icons-div {
@@ -75,16 +77,16 @@
     padding: 20px 30px;
   }
 
-  .content h2{
+  .content h2 {
     margin-bottom: 2rem;
   }
 
-  .content p{
+  .content p {
     font-size: 0.9rem;
     text-align: center;
   }
 
-  .icons-div{
+  .icons-div {
     margin: 0 128px;
     padding-bottom: 2rem;
   }
@@ -99,7 +101,7 @@
 }
 
 @media only screen and (max-width: 530px) {
-  .icons-div{
+  .icons-div {
     margin: 0 20px;
     padding-bottom: 2rem;
   }

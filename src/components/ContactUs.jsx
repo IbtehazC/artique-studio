@@ -26,9 +26,10 @@ export default function ContactUs() {
 
   return (
     <div>
-      <div className="container">
+      <div className="contact-containerb">
         <form onSubmit={sendEmail}>
           <div className="form-items">
+            <p>CONTACT US</p>
             <div className="input-fields">
               <input
                 type="text"
@@ -38,16 +39,9 @@ export default function ContactUs() {
               />
 
               <input
-                type="email"
-                className="input"
-                placeholder="name@example.com"
-                name="email"
-              />
-
-              <input
                 type="text"
                 className="input"
-                placeholder="01XXXXXXXXX"
+                placeholder="Phone number"
                 name="phone_number"
               />
             </div>
@@ -56,14 +50,14 @@ export default function ContactUs() {
               <textarea
                 className="input"
                 id=""
-                placeholder="Type it Out"
+                placeholder="Message"
                 name="message"
               ></textarea>
               <div className="btn-submit">
                 <input
                   type="submit"
                   className="submit-btn"
-                  value="Send Now"
+                  value="Send"
                 ></input>
               </div>
             </div>
