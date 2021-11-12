@@ -33,6 +33,12 @@
   font-weight: 200;
 }
 
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .icons-div {
   display: flex;
   justify-content: space-around;

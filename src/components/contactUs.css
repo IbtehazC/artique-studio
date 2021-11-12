@@ -55,7 +55,7 @@
 }
 
 .submit-btn {
-  background: #57b846;
+  background: #28527a;
   text-align: center;
   padding: 0 33px;
   line-height: 40px;
@@ -68,8 +68,8 @@
 }
 
 .submit-btn:hover {
-  background: #4dae3c;
-  color: whitesmoke;
+  background: #28527a;
+  color: #fbeeac;
 }
 
 @media screen and (max-width: 600px) {
