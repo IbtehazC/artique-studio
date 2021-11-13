@@ -30,7 +30,7 @@ export default function About() {
           initial={{ x: "100vw" }}
           animate={{ x: 0, transition: { duration: 1, type: "spring" } }}
         >
-          <h2 style={{ marginTop: "3rem" }}>Tahsin Nur</h2>
+          <h2 style={{ marginTop: "3rem" }}>Tahseen Nur</h2>
           <div className="avatar-container">
             <img
               src={tahsinAvatar}
