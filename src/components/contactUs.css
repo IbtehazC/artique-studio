@@ -1,37 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 .form-items {
   width: 600px;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.input-fields {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10%;
+.form-items p {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .input-fields,
 .txt-area {
-  width: 48%;
+  width: 100%;
+  font-family: 'Nunito Sans';
 }
 
 .input {
-  margin: 10px 0;
+  font-size: 16px;
   background: transparent;
   border: none;
-  border-bottom: 2px solid whitesmoke;
-  padding: 10px;
-  color: whitesmoke;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 33px;
+  padding: 16px;
+  color: #ccc;
   width: 100%;
   outline: none;
-  font-family: "New Tegomin", serif;
   font-size: 16px;
+  font-family: 'Nunito Sans';
 }
 .footer {
   background-color: black;
@@ -43,30 +43,33 @@
 }
 
 ::-webkit-input-placeholder {
-  color: whitesmoke;
+  color: #ccc;
 }
 
 ::-moz-input-placeholder {
-  color: whitesmoke;
+  color: #ccc;
 }
 
 ::-ms-input-placeholder {
-  color: whitesmoke;
+  color: #ccc;
 }
 
 .submit-btn {
-  background: whitesmoke;
+  background: #28527a;
   text-align: center;
-  padding: 15px;
-  border-radius: 5px;
-  color: black;
+  padding: 0 33px;
+  line-height: 40px;
+  border-radius: 20px;
+  color: white;
   cursor: pointer;
   text-transform: uppercase;
+  border: none;
+  outline: none;
 }
 
 .submit-btn:hover {
-  background: black;
-  color: whitesmoke;
+  background: #28527a;
+  color: #fbeeac;
 }
 
 @media screen and (max-width: 600px) {
@@ -84,10 +87,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .txt-area textarea {
-    height: 80px;
-    width: 300px;
-  }
   .form-items {
     width: 350px;
     margin: 0 auto;
@@ -97,13 +96,11 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px rgb(0 0 0 / 80%);
-    height: 400px;
   }
   .input-fields {
     display: flex;
     flex-direction: column;
     margin-right: 10%;
-    width: 200px;
   }
   .content h2 {
     text-align: center;

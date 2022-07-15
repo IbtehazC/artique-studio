@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../images/Logo.svg";
 
 export default function NavBar() {
   const [showLogo, setShowLogo] = useState(false);
@@ -16,7 +17,7 @@ export default function NavBar() {
     <nav className="navbar">
       <Link to="/" className={showLogo ? "logo-show" : "logo"}>
         <div className="logo-container">
-          <p>Artique Studio</p>
+          <img src={logo} alt="logo" />
         </div>
       </Link>
 
