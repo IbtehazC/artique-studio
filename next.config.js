@@ -3,6 +3,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: ["vmpkfzmgcwrtqhrhzfmb.supabase.co"],
+    loader: 'imgix',
     path: "/",
   },
   env: {
