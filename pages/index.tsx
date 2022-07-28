@@ -23,7 +23,6 @@ interface Image {
 }
 
 const Home = ({ images }: { images: Image[] }) => {
-  console.log(images);
   return (
     <>
       <Head>
